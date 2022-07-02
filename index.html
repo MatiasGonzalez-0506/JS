@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/ordenador-personal.png">
 </head>
 <body>
     <div class="container">
@@ -14,17 +15,36 @@
             <div class="card-txt"><h1>Laptop Gamer AMD</h1></div>
             <div class="card-footer">
                 <form action="">
-                    <select name="color" id="color-laptop">selecciona color</select>
+                    <h4>Color:</h4>
+                    <select id="color">
+                        <option value="Color" selected>selecciona el Color</option>
+                        <option value="red">Rojo</option>
+                        <option value="green">Verde</option>
+                        <option value="blue">Azul</option>
+                    </select>
+                    <h4>Precio:</h4>
+                    <select id="price">
+                        <option value="Price" selected>Selecciona Precio</option>
+                        <option value="200000">200.000</option>
+                        <option value="300000">300.000</option>
+                        <option value="400000">400.000</option>
+                    </select>
+                    <h4>Cantidad:</h4>
+                    <label for="units"></label>
+                    <input type="text" id="units"> <br>
+                    <button type="submit">Calcular Total</button>
                 </form>
-                <form action="">
-                    <select name="price" id="laptop-price"></select>
-                </form>
-                <button type="submit">Calcular</button>
             </div>
-        </div>    
+        </div>  
+        <div id="totalCard" class="total-card">
+            <h2>Total de venta</h2>
+            <div>
+                <ul id="list">
+                </ul>
+            </div>
+            <div id="circle" class="circle"></div>
+        </div>  
     </div>
-    <div class="card-total">
-
-    </div>
+<script src="assets/js/index.js"></script>
 </body>
 </html>
